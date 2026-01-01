@@ -1,0 +1,209 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", serif;
+  background-color: #f5efe6;
+  color: #3a2f25;
+}
+
+/* ===== HEADER ===== */
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #f8f1e7;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 80px;
+  z-index: 1000;
+  max-height: 80px;
+}
+
+.logo img {
+  height: 40px;
+}
+
+.main-home {
+  list-style: none;
+  display: flex;
+  gap: 5vw;
+}
+
+.main-home a {
+  text-decoration: none;
+  font-weight: 500;
+  color: #3a2f25;
+  display: inline-block;
+  transition: transform 0.5 ease-out;
+}
+.main-home a:hover {
+  border-bottom: 2px solid #3a2f25;
+  transform: scale(1.5);
+}
+.header-icons a {
+  margin-left: 20px;
+  font-size: 18px;
+  text-decoration: none;
+  display: inline-block;
+  transition: transform 0.3 ease;
+}
+.icon-search:hover,
+.icon-cart:hover {
+  transform: scale(1.4);
+}
+
+.impressive-campaign {
+  height: 50vh;
+  margin-top: 90px;
+  background: url("../photo/anh-nen-coffe.jpg") center/cover no-repeat;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+}
+.impressive-campaign {
+  position: relative;
+}
+
+/**/
+.danh-muc-san-pham {
+  width: 90%;
+  margin: 40px auto;
+}
+
+.danh-muc-san-pham h3 {
+  font-size: 22px;
+  margin-bottom: 15px;
+  color: #4b2e2e;
+}
+
+/* ===== KHUNG TRƯỢT ===== */
+.khung-truot {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.ca-phe {
+  display: grid;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.drinks {
+  display: grid;
+  align-items: center;
+  justify-content: space-around;
+}
+.button-lr:hover {
+  background: #4b2e2e;
+  transform: scale(1.1);
+}
+
+/* ===== VÙNG SẢN PHẨM ===== */
+.cac-san-pham {
+  overflow: hidden;
+  width: 100%;
+}
+
+.cac-san-pham ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  transition: transform 0.5s ease;
+}
+
+/* ===== MỖI SẢN PHẨM ===== */
+.cac-san-pham li {
+  min-width: 220px;
+  background: #fff;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: 0.3s;
+}
+
+.cac-san-pham li:hover {
+  transform: translateY(-5px);
+}
+
+/* ===== ẢNH ===== */
+.anh-san-pham {
+  width: 100%;
+  height: 150px;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.anh-san-pham img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.4s;
+}
+
+.cac-san-pham li:hover img {
+  transform: scale(1.1);
+}
+
+/* ===== GIÁ ===== */
+.cac-san-pham p {
+  margin: 12px 0;
+  font-weight: bold;
+  color: #333;
+}
+
+/* ===== NÚT ĐẶT ===== */
+.dat-hang button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 20px;
+  background: #c97b63;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.dat-hang button:hover {
+  background: #a45a44;
+}
+/**/
+.footer {
+  background: #3a2f25;
+  color: #ddd;
+  padding: 60px 100px;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+}
+
+.footer h3 {
+  margin-bottom: 15px;
+}
+
+.footer a {
+  color: #ddd;
+  text-decoration: none;
+}
+
+.footer input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+.footer button {
+  width: 100%;
+  padding: 8px;
+  background: #c7a17a;
+  border: none;
+  cursor: pointer;
+}

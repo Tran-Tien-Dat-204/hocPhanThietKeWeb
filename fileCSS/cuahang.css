@@ -42,6 +42,7 @@ body {
 
 .main-home a:hover {
   border-bottom: 2px solid #3a2f25;
+  font-size: larger;
 }
 
 .header-icons a {
@@ -54,13 +55,14 @@ body {
 .impressive-campaign {
   height: 65vh;
   margin-top: 70px;
-  background: url("../photo/hero.jpg") center/cover no-repeat;
+  background: url("../photo/anh-nen-coffe.jpg") center/cover no-repeat;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
   position: relative;
+  background-size: 100%;
 }
 
 .impressive-campaign::before {
@@ -81,11 +83,6 @@ body {
   font-size: 44px;
   letter-spacing: 2px;
   margin-bottom: 20px;
-}
-
-.impressive-campaign {
-  background: url(../photo/anh-nen-coffe.jpg);
-  background-size: 100%;
 }
 
 /* sửa lỗi id trùng → dùng class */
